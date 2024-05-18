@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en" className={`${dm_sans.variable} ${space_grotesk.variable}`}>
       <body  className="bg-[#070815] text-white">
         <Header />
-        <main className="max-w-5xl mx-auto">{children}</main>
+        <main className="max-w-[90%] mx-auto">{children}</main>
         <Footer />
       </body>
     </html>

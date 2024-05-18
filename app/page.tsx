@@ -7,12 +7,12 @@ export default function Home() {
   const className =
     "  h-fit w-fit rounded-full border border-blue-100/20 bg-blue-200/10 px-4 py-2 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2";
   return (
-    <main className="flex min-h-screen flex-col items-center  ">
-      <Bounded>   {/* for responsiveness */}
+    <main className="flex  flex-col items-center  ">
+      <Bounded>  
         <div className="relative">
           <Stargrid />
           <div className="mx-auto w-[90%] pb-6 md:w-[80%]">
-            <h1 className="h1-bold text-balance text-center font-medium ">
+            <h1 className=" h2-medium md:h1-bold text-balance text-center font-medium ">
               Connect data transformation with actionable results.
             </h1>
             <p className="p-regualr-24 mx-auto w-full text-balance pt-4 text-center text-slate-300 md:w-[60%]">
@@ -25,15 +25,14 @@ export default function Home() {
               Get Started
             </button>
           </div>
-          <div className="glass-container mt-12 w-fit">
+          <div className="glass-container mt-12 w-fit  mx-auto">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            <Image
+             <img
               src="/nocode1.png"
-              height={800}
-              width={1200}
+             
               alt="DarkMode"
-              className="mx-auto  rounded-md"
-            />
+              className="mx-auto  rounded-md w-fit "
+            /> 
           </div>
         </div>
         <div className="mt-12">
@@ -52,14 +51,14 @@ export default function Home() {
         </div>
         {/* //grid-rows auto-auto-auto helps to repeat the h3,p and img  */}
         {/* subgrid helps us to make horizontal alignment */}
-        <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
-            {
+        <div className="mt-16 grid md:max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
+             {
               ctaItems.map((item)=>{
                 return(
-                  <div key={item.header} className={clsx("glass-container row-span-3 grid grid-rows-subgrid gap-4 rounded-lg  bg-gradient-to-b from-gray-900 to-gray-950 p-4", item.wide ? 'col-span-2': "col-span-1")}>
+                  <div key={item.header} className={clsx("glass-container row-span-3 grid grid-rows-subgrid gap-4 rounded-lg  bg-gradient-to-b from-gray-900 to-gray-950 p-4", item.wide ? 'col-span-2': " col-span-2 md:col-span-1")}>
                     <h3 className="text-center text-2xl">{item.header}</h3>
-                   <div className="max-w-md-text-balance text-slate-300">
-                   <p>
+                   <div className="max-w-md text-balance text-slate-300">
+                   <p className=" text-center md:text-start">
                     {item.description}
                     </p>
                    </div>
@@ -67,7 +66,7 @@ export default function Home() {
                   </div>
                 )
               })
-            }
+            } 
         </div>
         <div className=" mt-[8rem] md:mt-[14rem] relative">
           <div className="bg-blue-400/20 blur-3xl aspect-square   absolute max-w-xl w-full -z-10"/>
@@ -80,12 +79,11 @@ export default function Home() {
             </span>
           </h1>
           <div className="glass-container mt-7">
-            <Image
+            <img
               src="/nocode2.png"
-              height={500}
-              width={800}
+             
               alt="DarkMode"
-              className="mx-auto  rounded-md"
+              className="mx-auto  rounded-md h-[full] w-fit"
             />
           </div>
         </div>
