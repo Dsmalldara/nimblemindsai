@@ -18,6 +18,11 @@
     margin: 0;
     scroll-behavior: smooth;
   }
+  .cta-section2{
+    font-family: var(--font-inter);
+    /* font-weight: medium; */
+    /* font-size: 40px; */
+  }
 
   @layer utilities {
     .wrapper {
