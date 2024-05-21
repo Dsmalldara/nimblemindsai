@@ -10,7 +10,7 @@ function Footer() {
       <Image src="/logoai.svg" alt="logo" height={20} width={45}/>
      <p className="my-auto"> nimbleminds ai</p></span>
             </div>
-            <div className="flex flex-row gap-6 min-h-11 items-center ">
+            <div className="flex-between  flex flex-row gap-[10rem] md:gap-6 min-h-11 ">
             {
              NavItems.map((link,header)=>{
             return (

@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en" className={`${dm_sans.variable} ${space_grotesk.variable} ${inter.variable}`}>
       <body  className="bg-[#070815] text-white">
         <Header />
-        <main className="max-w-[90%] mx-auto">{children}</main>
+        <main className=" mx-auto">{children}</main>
         <Footer />
       </body>
     </html>

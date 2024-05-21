@@ -4,9 +4,11 @@ import { ctaItems } from "./sharedComp/Links";
 import Stargrid from "./sharedComp/Stargrid";
 import Image from "next/image";
 import { GiLightBulb } from "react-icons/gi";
+import Integration from "./Integrations/Integration";
+import Insights from "./Insights/Insights";
+import className from   "./sharedComp/Links";
 export default function Home() {
-  const className =
-    "  h-fit w-fit rounded-full border border-blue-100/20 bg-blue-200/10 px-4 py-2 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2";
+
   return (
     <main className="flex  flex-col items-center  ">
       <Bounded>  
@@ -27,12 +29,12 @@ export default function Home() {
             </button>
           </div>
           <div className="glass-container mt-12 w-fit  mx-auto">
-            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
+            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter  max-w-[90%]"/>
              <img
-              src="/headerimg.png"
+              src="/nocode1.png"
              
               alt="DarkMode"
-              className="mx-auto  rounded-md w-fit "
+              className="mx-auto  rounded-md w-fit  "
             /> 
           </div>
         </div>
@@ -59,7 +61,7 @@ export default function Home() {
                   <div key={item.header} className={clsx("glass-container row-span-3 grid grid-rows-subgrid gap-4 rounded-lg  bg-gradient-to-b from-gray-900 to-gray-950 p-4", item.wide ? 'col-span-2': " col-span-2 md:col-span-1")}>
                     <h3 className="text-center text-2xl">{item.header}</h3>
                    <div className="max-w-md text-balance text-slate-300">
-                   <p className=" text-center md:text-start">
+                   <p className=" text-center mx-auto ">
                     {item.description}
                     </p>
                    </div>
@@ -109,7 +111,7 @@ export default function Home() {
           <h2 className="text-2xl  bg-gradient-to-l from-gray-100 to-green-300 bg-clip-text text-transparent text-center">
             Built for your systems
           </h2>
-          <p className="text-center w-[80%] mx-auto mt-0">
+          <p className="text-center w-[80%] mx-auto mt-0 subpixel-antialiased">
             NimbleMind AI is built for your systems. fly through your tasks  with rapid speed, shortcut for everything, literally everything.
           </p>
           </div>
@@ -118,13 +120,18 @@ export default function Home() {
          <img src="/flash.png" width={200} height={200}  className="  max-h-48 w-auto mx-auto items-center justify-center flex"alt="images"/>
          <div  className="absolute bg-gradient-to-r from-blue-400/20 to-[#151A38] blur-3xl aspect-square -z-10 w-full"/>
          </div>
-         <h2 className="text-2xl  text-center  bg-gradient-to-l from-gray-100 to-green-300 bg-clip-text text-transparent">Breathakingly fast</h2>
-         <p className="text-center text-balance   ">
+         <h2 className="text-2xl  text-center  bg-gradient-to-l from-gray-100 to-green-300 bg-clip-text text-transparent subpixel-antialiased">Breathakingly fast</h2>
+         <p className="text-center text-balance   subpixel-antialiased">
           Built for speed with 100ms response time and sync, let's get to work!
          </p>
            </div> 
         </div>
       </Bounded>
+      <Integration/>
+      <div className="mt-[3rem] md:mt-18">
+      <Insights />
+      </div>
+
     </main>
   );
 }
