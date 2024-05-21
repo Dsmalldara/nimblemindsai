@@ -6,7 +6,7 @@ import Image from "next/image";
 import { GiLightBulb } from "react-icons/gi";
 import Integration from "./Integrations/Integration";
 import Insights from "./Insights/Insights";
-import className from   "./sharedComp/Links";
+import {className} from   "./sharedComp/Links";
 export default function Home() {
 
   return (
