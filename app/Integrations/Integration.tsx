@@ -24,7 +24,7 @@ function Integration() {
        <Image src='/integration.jpg' alt='header' className=' object-cover' fill quality={90}/>
       <StarBackground/>
       <div className='relative'>
-        <h2 className='text-center bg-gradient-to-tr from-slate-200 to-green-100 bg-clip-text text-transparent   items-center text-balance prose-invert text-fallback  h2-medium mx-auto '>
+        <h2 className='text-center font-semibold bg-gradient-to-tr from-slate-200 to-green-100 bg-clip-text text-transparent   items-center text-balance prose-invert text-fallback  h2-medium mx-auto '>
         Integration with 
         <br />
        <span className='flex items-center  justify-center text-balance'> Leading Technologies</span>

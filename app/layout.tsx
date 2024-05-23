@@ -3,12 +3,18 @@ import { Inter } from "next/font/google";
 import {Space_Grotesk} from "next/font/google"
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
+import { Lora } from "next/font/google";
 import Header from "./sharedComp/Header";
 import Footer from "./sharedComp/Footer";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+})
+const lora = Lora({
+  subsets:['latin'],
+  weight:"400",
+  variable:"--font-lora"
 })
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -34,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dm_sans.variable} ${space_grotesk.variable} ${inter.variable}`}>
+    <html lang="en" className={`${dm_sans.variable} ${space_grotesk.variable} ${inter.variable} ${lora.variable}`}>
       <body  className="bg-[#070815] text-white">
         <Header />
         <main className=" mx-auto">{children}</main>

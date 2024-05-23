@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily:{
+        lora:["var(--font-lora)"]
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

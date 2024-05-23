@@ -28,13 +28,13 @@ export default function Home() {
               Get Started
             </button>
           </div>
-          <div className="glass-container mt-12 w-fit  mx-auto">
-            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter  max-w-[90%]"/>
+          <div className="glass-container mt-12  mx-auto md:w-[80%]">
+            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter  "/>
              <img
               src="/nocode1.png"
              
               alt="DarkMode"
-              className="mx-auto  rounded-md w-fit  "
+              className="mx-auto  rounded-md  "
             /> 
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-16 md:mt-[7rem] ">
-          <h1 className="cta-section2 text-3xl  text-center text-balance">
+          <h1 className="cta-section2 text-3xl font-semibold  text-center text-balance">
             Unlike any tool
           <br/>
           <span className="flex items-center  justify-center ">
