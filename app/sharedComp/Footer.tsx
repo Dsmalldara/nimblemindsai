@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Footer() {
   return (
     <div className="flex md:flex-row flex-col items-center justify-between  px-8  border-t border-slate-700  md:py-4">
-            <div className="flex  gap-6 min-h-11  ">
+            <div className="flex  gap-6 min-h-11  py-3">
             {/* <Logo/> */}
             <span className=' flex gap-2 pt-8'>
       <Image src="/logoai.svg" alt="logo" height={20} width={45}/>

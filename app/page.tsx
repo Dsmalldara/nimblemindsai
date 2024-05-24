@@ -1,43 +1,19 @@
 import clsx from "clsx";
 import Bounded from "./sharedComp/Bounded";
 import { ctaItems } from "./sharedComp/Links";
-import Stargrid from "./sharedComp/Stargrid";
 import Image from "next/image";
 import { GiLightBulb } from "react-icons/gi";
 import Integration from "./Integrations/Integration";
 import Insights from "./Insights/Insights";
 import {className} from   "./sharedComp/Links";
+import GsapAnimateContent from "./sharedComp/GsapAnimateContent";
+import IntegrationAnimation from "./sharedComp/IntegrationAnimation";
 export default function Home() {
 
   return (
     <main className="flex  flex-col items-center  ">
       <Bounded>  
-        <div className="relative">
-          <Stargrid />
-          <div className="mx-auto w-[90%] pb-6 md:w-[80%]">
-            <h1 className=" h2-medium md:h1-bold text-balance text-center font-medium ">
-              Connect data transformation with actionable results.
-            </h1>
-            <p className="p-regualr-24 mx-auto w-full text-balance pt-4 text-center text-slate-300 md:w-[60%]">
-              At NimbleMind AI, we bridge the gap between complex data and
-              actionable insights.
-            </p>
-            <button
-              className={`${className} mx-auto mt-6 flex items-center justify-center  text-center`}
-            >
-              Get Started
-            </button>
-          </div>
-          <div className="glass-container mt-12  mx-auto md:w-[80%]">
-            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter  "/>
-             <img
-              src="/nocode1.png"
-             
-              alt="DarkMode"
-              className="mx-auto  rounded-md  "
-            /> 
-          </div>
-        </div>
+        <GsapAnimateContent/>
         <div className="mt-12">
           <h1 className="text-fallback text-center text-5xl">
             Precision
@@ -73,6 +49,7 @@ export default function Home() {
         </div>
         <div className=" mt-[8rem] md:mt-[14rem] relative">
           <div className="bg-blue-400/20 blur-3xl aspect-square   absolute max-w-xl w-full -z-10"/>
+        <IntegrationAnimation>
           <h1 className=" text-center text-balance text-3xl md:text-5xl bg-gradient-to-r from-gray-100 to-green-300 bg-clip-text text-transparent">
            Smooth Integration 
            <br />
@@ -81,6 +58,7 @@ export default function Home() {
              with  Foundational Abstraction
             </span>
           </h1>
+        </IntegrationAnimation>
           <div className=" mt-7 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-4 py-8 border-blue-50/15  border rounded-xl grid  lg:grid-cols-3 items-center  backdrop-blur">
             <div className="md:ml-[-1rem] mt-4 ">
             <div className="w-fit rounded-[0.4rem]  bg-blue-500/35 p-2 text-4xl mx-auto md:mb-0 mb-2 md:mx-0  ">
@@ -135,3 +113,4 @@ export default function Home() {
     </main>
   );
 }
+

@@ -1,4 +1,5 @@
-import { icons } from "../Integrations/Integration"
+import { icons } from "./PulsingAnimations"
+
 
 
 export type NavLinks ={
